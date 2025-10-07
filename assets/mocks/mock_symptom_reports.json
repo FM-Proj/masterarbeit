@@ -1,0 +1,110 @@
+[
+  {
+    "id": 12,
+    "symptom": "Blähbauch",
+    "dateTime": "2025-07-24T16:55:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 11,
+    "symptom": "Druck- und Völlegefühl",
+    "dateTime": "2025-07-25T10:55:00Z",
+    "impairment": 8,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 10,
+    "symptom": "Bauchschmerzen",
+    "dateTime": "2025-07-25T10:55:00Z",
+    "impairment": 4,
+    "intoleranceCandidate": true,
+    "allergyCandidate": true,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 9,
+    "symptom": "Blähbauch",
+    "dateTime": "2025-07-30T15:55:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 8,
+    "symptom": "Verstopfung",
+    "dateTime": "2025-07-29T10:54:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": true,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 7,
+    "symptom": "Durchfall",
+    "dateTime": "2025-07-26T23:54:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 6,
+    "symptom": "Sodbrennen/Reflux",
+    "dateTime": "2025-08-01T10:54:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 5,
+    "symptom": "Bauchschmerzen",
+    "dateTime": "2025-08-02T22:53:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 4,
+    "symptom": "Durchfall",
+    "dateTime": "2025-08-01T22:53:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 3,
+    "symptom": "Verstopfung",
+    "dateTime": "2025-08-04T14:53:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": true,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 2,
+    "symptom": "Blähbauch",
+    "dateTime": "2025-08-05T09:53:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": false,
+    "generalWarningCandidate": null
+  },
+  {
+    "id": 1,
+    "symptom": "Durchfall",
+    "dateTime": "2025-08-06T14:52:00Z",
+    "impairment": null,
+    "intoleranceCandidate": true,
+    "allergyCandidate": null,
+    "generalWarningCandidate": null
+  }
+]

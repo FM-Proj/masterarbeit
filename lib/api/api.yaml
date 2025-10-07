@@ -1,0 +1,940 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: BesserEsser
+  license:
+    name: MIT
+servers:
+  #- url: http://besseresser-env.eba-y3v4ffbm.eu-central-1.elasticbeanstalk.com/v1/
+  #  description: Production environment
+  - url: https://leakydiet-api.besseresser-app.de/v1
+    description: leakydiet production environment
+  #- url: http://10.100.28.160:8090/v1/
+  #  description: Zollhof Yannick
+  #- url: http://192.168.2.214:8090/v1/
+  #  description: Zu Hause Yannick
+  #- url: http://10.0.2.2:8090/v1/
+  #  description: Local development server android
+  #- url: http://localhost:8090/v1/
+  #  description: Local development server ios
+paths:
+  /meals:
+    get:
+      summary: List all Meals of the current user
+      operationId: listMeals
+      tags:
+        - meals
+      responses:
+        '200':
+          description: An array of all Meals of the current user
+          content:
+            application/vnd.besseresser.meals.get.v3+json:
+              schema:
+                $ref: '#/components/schemas/Meals'
+    post:
+      summary: Add new Meal for the current user
+      operationId: addMeal
+      tags:
+        - meals
+      requestBody:
+        content:
+          application/vnd.besseresser.meals.post.v3+json:
+            schema:
+              $ref: '#/components/schemas/Meal'
+      responses:
+        '201':
+          description: A new Meal was created successfully
+          headers:
+            Location:
+              schema:
+                type: string
+                description: The URL of the new created Meal
+  /meals/forDietitians:
+    get:
+      summary: List all Meals of the current user for a dietitian
+      operationId: listMealsForDietitian
+      tags:
+        - meals
+      responses:
+        '200':
+          description: An array of all Meals of the current user for a dietitian
+          content:
+            application/vnd.beseresser.meals_4_dietitian.get.v3+json:
+              schema:
+                $ref: '#/components/schemas/MealsForDietitian'
+  /meals/{mealId}:
+    put:
+      summary: Alter an existing Meal for the current user
+      operationId: alterMeal
+      tags:
+        - meals
+      parameters:
+        - name: mealId
+          in: path
+          required: true
+          description: The id of the Meal to alter
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        content:
+          application/vnd.besseresser.meals.put.v1+json:
+            schema:
+              $ref: '#/components/schemas/Meal'
+      responses:
+        '200':
+          description: The change was successful
+
+    delete:
+      summary: Deletes the Meal with the provided mealId
+      operationId: deleteMeal
+      tags:
+        - meals
+      parameters:
+        - name: mealId
+          in: path
+          required: true
+          description: The id of the Meal to delete
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '204':
+          description: Null response
+
+  /symptom-reports:
+    get:
+      summary: List all Symptom Reports of the current user
+      operationId: listSymptomReports
+      tags:
+        - symptomReports
+      responses:
+        '200':
+          description: An array of all Symptom Reports of the current user
+          content:
+            application/vnd.besseresser.meals.post.v2+json:
+              schema:
+                $ref: '#/components/schemas/SymptomReports'
+    post:
+      summary: Add new Symptom Report for the current user
+      operationId: addSymptomReport
+      tags:
+        - symptomReports
+      requestBody:
+        content:
+          application/vnd.besseresser.symptomreport.post.v2+json:
+            schema:
+              $ref: '#/components/schemas/SymptomReport'
+      responses:
+        '201':
+          description: The newly created Symptom Report
+          headers:
+            Location:
+              schema:
+                type: string
+                description: The URL of the new created Symptom Report
+          content:
+            application/vnd.besseresser.symptomreport.post.v2+json:
+              schema:
+                $ref: '#/components/schemas/SymptomReport'
+
+  /symptom-reports/{symptomReportId}:
+    put:
+      summary: Alter an existing SymptomReport for the current user
+      operationId: alterSymptomReport
+      tags:
+        - symptomReports
+      parameters:
+        - name: symptomReportId
+          in: path
+          required: true
+          description: The id of the SymptomReport to alter
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        content:
+          application/vnd.besseresser.symptomreport.put.v1+json:
+            schema:
+              $ref: '#/components/schemas/SymptomReport'
+      responses:
+        '200':
+          description: The updated symptom report
+          content:
+            application/vnd.besseresser.symptomreport.post.v2+json:
+              schema:
+                $ref: '#/components/schemas/SymptomReport'
+
+    delete:
+      summary: Deletes the Symptom Report with the provided symptomReportId
+      operationId: deleteSymptomReport
+      tags:
+        - symptomReports
+      parameters:
+        - name: symptomReportId
+          in: path
+          required: true
+          description: The id of the Symptom Report to delete
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '204':
+          description: The Symptom Report was deleted successfully
+
+  /suggested-ingredients:
+    get:
+      summary: Get a list of suggested ingredients
+      operationId: getSuggestedIngredients
+      tags:
+        - meals
+      parameters:
+        - name: q
+          in: query
+          schema:
+            type: string
+          description: A search text for available suggestions
+      responses:
+        '200':
+          description: Successfully returned a list of suggested ingredients
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/IngredientSuggestion'
+
+  /analysis:
+    get:
+      summary: Get the current intolerance probabilities
+      operationId: getAnalysis
+      tags:
+        - analysis
+      responses:
+        '200':
+          description: Successfully returned the intolerance analysis
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Analysis'
+
+  /analysis-review:
+    put:
+      summary: Create or update a analysis review
+      operationId: createOrUpdateAnalysisReview
+      security: [ ApiKeyAuth: [ write:analysis-review ] ]
+      tags:
+        - analysisReview
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AnalysisReview'
+      responses:
+        '200':
+          description: The change was successful
+
+
+  /accounts:
+    post:
+      summary: Create a new account
+      operationId: createAccount
+      security: [ ]
+      tags:
+        - account
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AccountCreation'
+      responses:
+        '200':
+          description: Successfully created the account
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Account'
+
+  /list-accounts:
+    get:
+      summary: Get a list of all accounts
+      operationId: getAccounts
+      security: [ ]
+      tags:
+        - list-accounts
+      responses:
+        '200':
+          description: Successfully returned the account information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AccountList'
+  /phase-status:
+    get:
+      summary: Get the current phase information of the user
+      operationId: getCurrentPhase
+      tags:
+        - phase
+      responses:
+        '200':
+          description: Successfully returned the current phase information
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PhaseStatus'
+  /phase-status/change:
+    post:
+      summary: Change the current phase of the user
+      operationId: changePhase
+      tags:
+        - phase
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PhaseChange'
+      responses:
+        '200':
+          description: Successfully changed the phase
+
+  /questionnaire_responses:
+    post:
+      summary: Create a new response to a questionnaire
+      operationId: createQuestionnaireResponse
+      tags:
+        - questionnaire
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/QuestionnaireResponse'
+      responses:
+        '201':
+          description: A new response was created successfully
+
+  /daily_questionnaire:
+    post:
+      summary: Create a daily questionnaire
+      operationId: addDailyQuestionnaire
+      tags:
+        - daily-questionnaire
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DailyQuestionnaire'
+      responses:
+        '201':
+          description: A new response was created successfully
+
+  /tolerance-test:
+    post:
+      summary: Start a new tolerance test
+      operationId: startToleranceTest
+      tags:
+        - tolerance-test
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ToleranceTestStartRequest'
+      responses:
+        '201':
+          description: A new tolerance test was started successfully
+
+    get:
+      summary: List all tolerance tests (config and attempts) of the current user
+      operationId: listToleranceTests
+      tags:
+        - tolerance-test
+      responses:
+        '200':
+          description: Config and attempts of the current user
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ToleranceTests'
+
+  /tolerance-test/{toleranceTestId}:
+    put:
+      summary: Stop a new tolerance test
+      operationId: stopOrCancelToleranceTest
+      tags:
+        - tolerance-test
+      parameters:
+        - name: toleranceTestId
+          in: path
+          required: true
+          description: The id of the tolerance test to alter
+          schema:
+            type: integer
+            format: int64
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ToleranceTestStopOrCancelRequest'
+      responses:
+        '200':
+          description: The tolerance test is updated successfully
+  /ingredient-information:
+    get:
+      summary: List of ingredients and their tolerance information
+      operationId: listIngredientInformation
+      tags:
+        - ingredientInformation
+      parameters:
+        - name: q
+          in: query
+          schema:
+            type: string
+          description: A search query text for ingredients
+      responses:
+        '200':
+          description: An array of ingredient information with tolerance
+          content:
+            application/vnd.besseresser.ingredient-information.get.v1+json:
+              schema:
+                $ref: '#/components/schemas/IngredientInformationResponse'
+
+security:
+  - ApiKeyAuth: [ ]
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Authorization
+  schemas:
+    Meal:
+      type: object
+      required:
+        - dateTime
+        - ingredients
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        dateTime:
+          type: string
+          format: date-time
+        mealComponents:
+          type: array
+          items:
+            $ref: '#/components/schemas/MealComponent'
+          minItems: 1
+        note:
+          type: string
+    MealComponent:
+      type: object
+      required:
+        - displayName
+        - inputUnit
+        - amountGram
+        - amountPortion
+      properties:
+        displayName:
+          type: string
+        ingredientId:
+          type: integer
+          format: int64
+          nullable: true
+        amountGram:
+          type: number
+        amountPortion:
+          type: number
+        inputUnit:
+          type: string
+          enum:
+            - GRAM
+            - PORTION
+    Meals:
+      type: array
+      items:
+        $ref: '#/components/schemas/Meal'
+
+    MealComponentForDietitian:
+      allOf:
+        - $ref: "#/components/schemas/MealComponent"
+        - type: object
+          properties:
+            fructoseAmount:
+              type: number
+              nullable: true
+              description: The fructose content per 100g of the ingredient
+            lactoseAmount:
+              type: number
+              nullable: true
+              description: The lactose content per 100g of the ingredient
+            sorbitAmount:
+              type: number
+              nullable: true
+              description: The sorbitol content per 100g of the ingredient
+            containsGluten:
+              $ref: "#/components/schemas/GlutenAmount"
+
+    GlutenAmount:
+      type: string
+      nullable: true
+      enum:
+        - CONTAINS_GLUTEN
+        - GLUTEN_FREE
+        - CONTAINS_TRACES
+
+    MealForDietitian:
+      allOf:
+        - $ref: "#/components/schemas/Meal"
+        - type: object
+          properties:
+            mealComponents:
+              type: array
+              items:
+                $ref: '#/components/schemas/MealComponentForDietitian'
+
+
+    MealsForDietitian:
+      type: array
+      items:
+        $ref: '#/components/schemas/MealForDietitian'
+
+    SymptomReport:
+      type: object
+      required:
+        - symptom
+        - dateTime
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        symptom:
+          type: string
+        dateTime:
+          type: string
+          format: date-time
+        impairment:
+          type: integer
+        intoleranceCandidate:
+          type: boolean
+          readOnly: true
+        allergyCandidate:
+          type: boolean
+          readOnly: true
+        generalWarningCandidate:
+          type: boolean
+          readOnly: true
+
+    SymptomReports:
+      type: array
+      items:
+        $ref: '#/components/schemas/SymptomReport'
+
+    Analysis:
+      type: object
+      required:
+        - fructoseAnalysis
+        - glutenAnalysis
+        - sorbitolAnalysis
+        - lactoseAnalysis
+        - mealAmount
+        - symptomAmount
+      properties:
+        fructoseAnalysis:
+          $ref: '#/components/schemas/AllergenAnalysis'
+        glutenAnalysis:
+          $ref: '#/components/schemas/AllergenAnalysis'
+        sorbitolAnalysis:
+          $ref: '#/components/schemas/AllergenAnalysis'
+        lactoseAnalysis:
+          $ref: '#/components/schemas/AllergenAnalysis'
+        mealAmount:
+          type: number
+          default: 0
+        symptomAmount:
+          type: number
+          default: 0
+        suggestedIntoleranceTreatment:
+          $ref: '#/components/schemas/IntoleranceTreatment'
+        analysisMessageForPatient:
+          type: string
+          description: A custom message for the patient
+        analysisMessageActionUrl:
+          type: string
+          description: A custom action URL for the patient
+
+    AllergenAnalysis:
+      type: object
+      required:
+        - sufficientData
+      properties:
+        probability:
+          type: number
+        sufficientData:
+          type: boolean
+
+    AnalysisReview:
+      type: object
+      required:
+        - fructoseRating
+        - glutenRating
+        - sorbitRating
+        - lactoseRating
+      properties:
+        probabilityFructose:
+          type: number
+          description: The probability of fructose intolerance
+        probabilityGluten:
+          type: number
+          description: The probability of gluten intolerance
+        probabilityLactose:
+          type: number
+          description: The probability of lactose intolerance
+        probabilitySorbite:
+          type: number
+          description: The probability of sorbitol intolerance
+        reviewResult:
+          $ref: '#/components/schemas/IntoleranceTreatment'
+        reviewComment:
+          type: string
+          description: A comment from the dietitian about the analysis review
+
+    IngredientSuggestion:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        displayName:
+          type: string
+        portionSizeInGrams:
+          type: number
+          nullable: true
+
+    Account:
+      type: object
+      required:
+        - authToken
+      properties:
+        authToken:
+          type: string
+
+    AccountList:
+      type: array
+      items:
+        $ref: '#/components/schemas/AccountReadonly'
+
+    AccountReadonly:
+      type: object
+      required:
+        - id
+        - email
+      properties:
+        id:
+          type: integer
+        authenticationUserId:
+          type: string
+
+    AccountCreation:
+      type: object
+      properties:
+        operatingSystem:
+          type: string
+          deprecated: true
+        deviceName:
+          type: string
+          deprecated: true
+        authenticationUserId:
+          type: string
+
+    QuestionnaireResponse:
+      type: object
+      required:
+        - questionnaireName
+        - questionnaireVersion
+        - triggerEvent
+        - answers
+      properties:
+        questionnaireName:
+          type: string
+        questionnaireVersion:
+          type: string
+        triggerEvent:
+          type: string
+        answers:
+          type: array
+          items:
+            $ref: '#/components/schemas/QuestionnaireResponseAnswer'
+
+    QuestionnaireResponseAnswer:
+      type: object
+      required:
+        - questionId
+      properties:
+        questionId:
+          type: string
+        answer:
+          type: string
+
+    DailyQuestionnaire:
+      type: object
+      required:
+        - date
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        date:
+          type: string
+          format: date
+        generalWellBeing:
+          type: integer
+        generalGastrointestinalSymptoms:
+          type: integer
+        extraintestinalSymptoms:
+          type: string
+        numberOfStools:
+          type: integer
+        noDigestionAbnormality:
+          type: boolean
+        diarrhea:
+          type: boolean
+        constipation:
+          type: boolean
+        variableDigestion:
+          type: boolean
+        medication:
+          type: string
+        stressLevel:
+          type: number
+        sportType:
+          type: string
+        sportDurationInMinutes:
+          type: integer
+        mindfulnessActivity:
+          type: string
+        mindfulnessDurationInMinutes:
+          type: integer
+        sleepInHours:
+          type: number
+
+    ToleranceTests:
+      type: object
+      required:
+        - testAttempts
+        - testConfig
+      properties:
+        testAttempts:
+          type: array
+          items:
+            $ref: '#/components/schemas/ToleranceTestAttempt'
+        testConfigGroups:
+          type: array
+          items:
+            $ref: '#/components/schemas/ToleranceTestConfigGroup'
+
+    ToleranceTestConfigGroup:
+      type: object
+      required:
+        - title
+        - testConfigs
+      properties:
+        title:
+          type: string
+        testConfigs:
+          type: array
+          items:
+            $ref: '#/components/schemas/ToleranceTestConfig'
+
+    ToleranceTestAttempt:
+      type: object
+      required:
+        - id
+        - ingredientId
+        - foodName
+        - level
+        - amount
+        - startDateTime
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        ingredientId:
+          type: integer
+          format: int64
+        foodName:
+          type: string
+        level:
+          type: integer
+        amount:
+          type: integer
+        passed:
+          type: boolean
+        startDateTime:
+          type: string
+          format: date-time
+        endDateTime:
+          type: string
+          format: date-time
+
+    ToleranceTestConfig:
+      type: object
+      required:
+        - foodName
+        - level1
+        - level2
+        - ingredientId
+      properties:
+        foodName:
+          type: string
+        ingredientId:
+          type: integer
+          format: int64
+        level1:
+          $ref: '#/components/schemas/TestLevel'
+        level2:
+          $ref: '#/components/schemas/TestLevel'
+        level3:
+          $ref: '#/components/schemas/TestLevel'
+        note:
+          type: string
+
+    TestLevel:
+      type: object
+      required:
+        - amount
+      properties:
+        amount:
+          type: integer
+        note:
+          type: string
+
+    ToleranceTestStartRequest:
+      type: object
+      required:
+        - foodName
+        - ingredientId
+        - level
+        - amount
+        - startDateTime
+      properties:
+        foodName:
+          type: string
+        ingredientId:
+          type: integer
+          format: int64
+        level:
+          type: integer
+        amount:
+          type: integer
+        startDateTime:
+          type: string
+          format: date-time
+
+    ToleranceTestStopOrCancelRequest:
+      type: object
+      required:
+        - stopDateTime
+      properties:
+        stopDateTime:
+          type: string
+          format: date-time
+        passed:
+          type: boolean
+        cancelled:
+          type: boolean
+
+    Phase:
+      type: string
+      enum:
+        - RECOGNITION
+        - ELIMINATION
+        - TEST
+        - LONG_TERM
+    IntoleranceTreatment:
+      type: string
+      enum:
+        - NONE
+        - FRUCTOSE
+        - GLUTEN
+        - SORBIT
+        - LACTOSE
+    PhaseStatus:
+      type: object
+      properties:
+        currentPhase:
+          $ref: '#/components/schemas/Phase'
+        intoleranceTreatment:
+          $ref: '#/components/schemas/IntoleranceTreatment'
+        startRecognitionPhaseDate:
+          type: string
+          format: date
+          description: The date when the user started the recognition phase
+        startEliminationPhaseDate:
+          type: string
+          format: date
+          description: The date when the user started the elimination phase
+        startTestPhaseDate:
+          type: string
+          format: date
+          description: The date when the user started the test phase
+        startLongTermPhaseDate:
+          type: string
+          format: date
+          description: The date when the user started the long term phase
+        readyForNextPhase:
+          type: boolean
+          description: Indicates if the user is ready for the next phase
+        currentPhaseLengthInDays:
+          type: integer
+          description: The length of the current phase in days
+        customMessage:
+          type: string
+          description: A custom text for the user
+        customMessageActionUrl:
+          type: string
+          description: A custom action URL for the user
+    PhaseChange:
+      type: object
+      required:
+        - newPhase
+      properties:
+        newPhase:
+          $ref: '#/components/schemas/Phase'
+    IngredientInformationResponse:
+      type: object
+      properties:
+        ingredients:
+          type: array
+          items:
+            $ref: '#/components/schemas/IngredientInformation'
+
+    IngredientInformation:
+      type: object
+      properties:
+        name:
+          type: string
+        ingredientId:
+          type: integer
+          format: int64
+        fructoseRating:
+          $ref: '#/components/schemas/IngredientToleranceRating'
+        lactoseRating:
+          $ref: '#/components/schemas/IngredientToleranceRating'
+        sorbitRating:
+          $ref: '#/components/schemas/IngredientToleranceRating'
+        glutenRating:
+          $ref: '#/components/schemas/IngredientToleranceRating'
+        fructoseGlucoseRatioRating:
+          $ref: '#/components/schemas/IngredientToleranceRating'
+
+    IngredientToleranceRating:
+      type: string
+      enum:
+        - GOOD
+        - MEDIUM
+        - BAD
+

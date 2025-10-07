@@ -1,0 +1,1190 @@
+[
+  {
+    "id": 35,
+    "dateTime": "2025-08-06T09:51:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": null,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Tomaten",
+        "ingredientId": 750600122,
+        "amountGram": 80,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 1275.2,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Rote Paprika",
+        "ingredientId": null,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 5628.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Spinat",
+        "ingredientId": 720100122,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 225.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },{
+        "displayName": "Rote Beete",
+        "ingredientId": 720100122,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 225.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },{
+        "displayName": "Sellerie",
+        "ingredientId": 720100122,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 225.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },{
+        "displayName": "Thunfisch",
+        "ingredientId": 720100122,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 225.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 34,
+    "dateTime": "2025-08-06T09:51:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Joghurt",
+        "ingredientId": 1310400000,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 4785.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Erdbeeren",
+        "ingredientId": 630010000,
+        "amountGram": 125,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 2818.75,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 40.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Heidelbeeren",
+        "ingredientId": 630040100,
+        "amountGram": 125,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 4180.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 5.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 33,
+    "dateTime": "2025-08-05T20:50:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Kichererbsen",
+        "ingredientId": 770700902,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 480.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Tahini",
+        "ingredientId": 1790010000,
+        "amountGram": 20,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Olivenöl",
+        "ingredientId": 1710200000,
+        "amountGram": 24,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Weißbrot",
+        "ingredientId": 230000000,
+        "amountGram": 30,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 9.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 32,
+    "dateTime": "2025-08-05T14:49:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 120,
+        "amountPortion": 6,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 37.2,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Sahne",
+        "ingredientId": 1310700000,
+        "amountGram": 45,
+        "amountPortion": 3,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 1471.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Lachs",
+        "ingredientId": 2040100000,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Limette",
+        "ingredientId": 660020100,
+        "amountGram": 20,
+        "amountPortion": 0,
+        "inputUnit": "GRAM",
+        "fructoseAmount": 160.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 31,
+    "dateTime": "2025-08-05T08:49:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Obstsalat",
+        "ingredientId": 2420700112,
+        "amountGram": 200,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 8864.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 1024.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 30,
+    "dateTime": "2025-08-04T20:48:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Glasnudeln",
+        "ingredientId": 800300400,
+        "amountGram": 80,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Gemüsemischung",
+        "ingredientId": 700900022,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 1054.5,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 135.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 29,
+    "dateTime": "2025-08-04T14:47:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Zitronensaftlimonade",
+        "ingredientId": 1430100400,
+        "amountGram": 200,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 6720.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Kartoffelpüree aus Pulver (mit Milch)",
+        "ingredientId": 2460370012,
+        "amountGram": 250,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 300.0,
+        "lactoseAmount": 9995.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_TRACES"
+      },
+      {
+        "displayName": "Spinat",
+        "ingredientId": 720100122,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 225.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 28,
+    "dateTime": "2025-08-04T09:47:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Dinkelbrot",
+        "ingredientId": 270100500,
+        "amountGram": 50,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 48.0,
+        "lactoseAmount": 53.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Marmelade",
+        "ingredientId": 1910350000,
+        "amountGram": 25,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 685.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 39.25,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 27,
+    "dateTime": "2025-08-03T19:46:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Kartoffeln",
+        "ingredientId": 1110000022,
+        "amountGram": 250,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 375.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Linsen",
+        "ingredientId": 870300100,
+        "amountGram": 60,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 26,
+    "dateTime": "2025-08-03T08:46:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Dinkelbrot",
+        "ingredientId": 270100500,
+        "amountGram": 50,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 48.0,
+        "lactoseAmount": 53.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Käse",
+        "ingredientId": 1330000000,
+        "amountGram": 30,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 25,
+    "dateTime": "2025-08-02T20:45:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Pommes frites",
+        "ingredientId": 1110300292,
+        "amountGram": 200,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 388.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Schweineschnitzel paniert",
+        "ingredientId": 2190520600,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 3.0,
+        "lactoseAmount": 907.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 24,
+    "dateTime": "2025-08-02T14:45:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Tomatensoße",
+        "ingredientId": 2430310513,
+        "amountGram": 180,
+        "amountPortion": 3,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 2602.8,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 23,
+    "dateTime": "2025-08-02T08:44:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Brötchen",
+        "ingredientId": 250120000,
+        "amountGram": 45,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 12.6,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Wurst",
+        "ingredientId": 2300000000,
+        "amountGram": 30,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 27.3,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 22,
+    "dateTime": "2025-08-01T18:44:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Hamburger",
+        "ingredientId": 2590110060,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 832.5,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 21,
+    "dateTime": "2025-08-01T14:43:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Thunfisch",
+        "ingredientId": null,
+        "amountGram": 130,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Sahne",
+        "ingredientId": 1310700000,
+        "amountGram": 45,
+        "amountPortion": 3,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 1471.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_TRACES"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 20,
+    "dateTime": "2025-08-01T08:43:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Brot (glutenfrei)",
+        "ingredientId": 220140000,
+        "amountGram": 45,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 4.95,
+        "lactoseAmount": 4.05,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Käse",
+        "ingredientId": 1330000000,
+        "amountGram": 30,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 19,
+    "dateTime": "2025-07-31T20:42:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Tomaten",
+        "ingredientId": 750600122,
+        "amountGram": 160,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 2550.4,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Gorgonzola",
+        "ingredientId": 1350220100,
+        "amountGram": 60,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 18,
+    "dateTime": "2025-07-31T14:41:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": null,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Sahne",
+        "ingredientId": 1310700000,
+        "amountGram": 60,
+        "amountPortion": 4,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 1962.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Brokkoli",
+        "ingredientId": 730120022,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 1377.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 501.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 17,
+    "dateTime": "2025-07-31T08:41:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Mehrkornbrot",
+        "ingredientId": 220910000,
+        "amountGram": 45,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 3.6,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Marmelade",
+        "ingredientId": 1910350000,
+        "amountGram": 50,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 1370.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 78.5,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 16,
+    "dateTime": "2025-07-30T20:40:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Reis",
+        "ingredientId": 330500032,
+        "amountGram": 80,
+        "amountPortion": 4,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 22.4,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Kuhmilch",
+        "ingredientId": 1310100000,
+        "amountGram": 300,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 14055.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Kirschen",
+        "ingredientId": 620100000,
+        "amountGram": 120,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 6477.6,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 1936.8,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 15,
+    "dateTime": "2025-07-30T14:40:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Reis",
+        "ingredientId": 330500032,
+        "amountGram": 80,
+        "amountPortion": 4,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 22.4,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Kichererbsen",
+        "ingredientId": 770700902,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 480.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 14,
+    "dateTime": "2025-07-30T08:39:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Weißbrot",
+        "ingredientId": 230000000,
+        "amountGram": 60,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 18.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Butter",
+        "ingredientId": 1760100000,
+        "amountGram": 40,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 240.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Frischkäse",
+        "ingredientId": 1370100000,
+        "amountGram": 90,
+        "amountPortion": 3,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 2304.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 13,
+    "dateTime": "2025-07-29T14:38:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Thunfisch",
+        "ingredientId": 2010210022,
+        "amountGram": 130,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Sahne",
+        "ingredientId": 1310700000,
+        "amountGram": 75,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 2452.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 12,
+    "dateTime": "2025-07-29T08:38:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Weißbrot",
+        "ingredientId": 230000000,
+        "amountGram": 60,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 18.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Käse",
+        "ingredientId": 1330000000,
+        "amountGram": 30,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 11,
+    "dateTime": "2025-07-28T20:37:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 100,
+        "amountPortion": 5,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 31.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Sahne",
+        "ingredientId": 1310700000,
+        "amountGram": 45,
+        "amountPortion": 3,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 1471.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Brokkoli",
+        "ingredientId": 730120022,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 1377.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 501.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 10,
+    "dateTime": "2025-07-28T08:36:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Obstsalat",
+        "ingredientId": 2420700112,
+        "amountGram": 200,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 8864.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 1024.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 9,
+    "dateTime": "2025-07-27T13:36:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Reis",
+        "ingredientId": 330500032,
+        "amountGram": 80,
+        "amountPortion": 4,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 22.4,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Kichererbsen",
+        "ingredientId": 770700902,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 480.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 8,
+    "dateTime": "2025-07-27T08:34:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Orangensaft",
+        "ingredientId": 660030600,
+        "amountGram": 200,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 4940.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Apfel",
+        "ingredientId": 610100100,
+        "amountGram": 60,
+        "amountPortion": 3,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 3441.6,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 198.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 7,
+    "dateTime": "2025-07-26T18:33:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Kartoffeln",
+        "ingredientId": 1110000022,
+        "amountGram": 250,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 375.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Linsen",
+        "ingredientId": 870300100,
+        "amountGram": 60,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 6,
+    "dateTime": "2025-07-26T13:32:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Brötchen",
+        "ingredientId": 250120000,
+        "amountGram": 45,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 12.6,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Wurst",
+        "ingredientId": 2300000000,
+        "amountGram": 30,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 27.3,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 5,
+    "dateTime": "2025-07-25T13:32:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Nudeln / Spaghetti",
+        "ingredientId": 560040022,
+        "amountGram": 120,
+        "amountPortion": 6,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 37.2,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Tomatensoße",
+        "ingredientId": 2430310513,
+        "amountGram": 120,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 1735.2,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 4,
+    "dateTime": "2025-07-25T08:32:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Joghurt",
+        "ingredientId": 1310400000,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 4785.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Nektarine",
+        "ingredientId": 620020100,
+        "amountGram": 40,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 714.4,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 324.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 3,
+    "dateTime": "2025-07-24T19:31:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Roggenbrot",
+        "ingredientId": 220210000,
+        "amountGram": 45,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 171.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Kuhmilch",
+        "ingredientId": 1310100000,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 7027.5,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 2,
+    "dateTime": "2025-07-24T13:30:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Kartoffelpüree aus Pulver (mit Milch)",
+        "ingredientId": 2460370012,
+        "amountGram": 250,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 300.0,
+        "lactoseAmount": 9995.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_TRACES"
+      },
+      {
+        "displayName": "Spinat",
+        "ingredientId": 720100122,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 225.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      },
+      {
+        "displayName": "Fischstäbchen",
+        "ingredientId": 2090300182,
+        "amountGram": 150,
+        "amountPortion": 1,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 4.5,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "id": 1,
+    "dateTime": "2025-07-24T08:27:00Z",
+    "mealComponents": [
+      {
+        "displayName": "Weißbrot",
+        "ingredientId": 230000000,
+        "amountGram": 60,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 18.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "CONTAINS_GLUTEN"
+      },
+      {
+        "displayName": "Käse",
+        "ingredientId": 1330000000,
+        "amountGram": 30,
+        "amountPortion": 2,
+        "inputUnit": "PORTION",
+        "fructoseAmount": 0.0,
+        "lactoseAmount": 0.0,
+        "sorbitAmount": 0.0,
+        "containsGluten": "GLUTEN_FREE"
+      }
+    ],
+    "note": ""
+  }
+]

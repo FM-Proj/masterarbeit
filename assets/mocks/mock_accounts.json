@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "authenticationUserId": "auth0|66d5ec4804568cfb91287a2c"
+  },
+  {
+    "id": 2,
+    "authenticationUserId": "auth0|abc"
+  },
+  {
+    "id": 3,
+    "authenticationUserId": "auth0|bcd"
+  }
+]
